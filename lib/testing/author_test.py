@@ -32,8 +32,8 @@ class TestAuthor:
         #assert author_1.name == "Carry Bradshaw"
 
         # comment out the next two lines if using Exceptions
-        author_2.name = 2
-        assert author_2.name == "Nathaniel Hawthorne"
+        #author_2.name = 2
+        #assert author_2.name == "Nathaniel Hawthorne"
 
         # uncomment the next two lines if using Exceptions
         with pytest.raises(Exception):
@@ -128,6 +128,8 @@ class TestAuthor:
         article_1 = author_1.add_article(magazine_1, "How to wear a tutu with style")
         article_2 = author_1.add_article(magazine_2, "2023 Eccentric Design Trends")
         article_3 = author_1.add_article(magazine_2, "Carra Marble is so 2020")
+
+
 
         assert isinstance(article_1, Article)
         assert len(author_1.articles()) == 3
